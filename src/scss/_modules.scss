@@ -57,20 +57,31 @@
     &__footer {
         display: flex;
         justify-content: center;
-
-        img {
-            position: absolute;
-        }
+        height: 100px;
     }
 
     &__cta {
         cursor: pointer;
         width: 175px;
+        bottom: 0;
+        
+        &--container {
+            max-width: 500px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__arrow {
+        width: 175px;
         height: 100px;
         bottom: 0;
+        position: absolute;
+        transition: all 0.5s ease;
     }
 
     &__logo {
+        position: absolute;
         right: 25px;
         bottom: 25px;
         height: 35px;

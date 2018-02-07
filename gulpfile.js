@@ -5,6 +5,7 @@ var uglify = require('gulp-uglify');          // minify js
 var plumber = require('gulp-plumber');        // fixes 'watch' breaking on error
 var babel = require('gulp-babel');            // compile ES6 into ES5
 var del = require('del');                     // clear folder
+var wait = require('gulp-wait');
 var watch = require('gulp-watch');            // watches for files added/deleted
 
 // Directory paths
@@ -19,6 +20,7 @@ gulp.task('clean', function() {
 // 'gulp styles' - compiles scss, autoprefixes
 gulp.task('styles', function() {
   return gulp.src(inputDir + 'scss/*.scss')
+             .pipe(wait(500))
              .pipe(plumber())
              .pipe(sass({ outputStyle:'compressed' })) // expanded/compressed
              .pipe(prefix('last 2 versions'))

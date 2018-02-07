@@ -20,14 +20,22 @@
               <div class="jumbo__quote jumbo__quote--3"> IT’S LIKE SEASONING A STEAK <br> -SPENCE </div>
             </div>
             <div class="jumbo__footer">
-              <img 
-                onmouseenter="cta_mouseover(this)"
-                onmouseleave="cta_mouseout(this)"
-                class="jumbo__cta"
-                src="dist/assets/LANDINGBAR.svg"
-              />
               <!-- Cache image below -->
-              <img style="display: none" src="dist/assets/LANDINGBARSWIPE.svg"/>
+
+              <div class="jumbo__cta--container">
+                <img 
+                  id="arrow-bar"
+                  class="jumbo__arrow"
+                  style="opacity: 0; z-index: 5;"
+                  src="dist/assets/LANDINGBARSWIPE.svg"
+                />
+                <img
+                  class="jumbo__arrow"
+                  style="height: 90px; bottom: 10px;"
+                  src="dist/assets/LANDINGBAR.svg"
+                />
+              </div>
+
               <img class="jumbo__logo" src="dist/assets/FOCOLOGO.svg" />
             </div>
           </div>
@@ -39,15 +47,15 @@
    </body>
    <script>
 
-    // Call to action button image swap
-    var cta_mouseover = function(x) {
-      x.src = "dist/assets/LANDINGBARSWIPE.svg";
-      x.style.height = 90;
-    };
-    var cta_mouseout = function(x) {
-      x.src = "dist/assets/LANDINGBAR.svg";
-      x.style.height = 100;
+    function setArrowBar() {
+      setTimeout(
+        function() {
+          var x = document.getElementById('arrow-bar');
+          x.style.opacity = 1;
+        }, 4500);
     }
+
+    setArrowBar();
 
    </script>
 </html>
