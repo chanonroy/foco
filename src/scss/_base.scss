@@ -1,9 +1,18 @@
+@import url('https://use.fontawesome.com/releases/v5.0.6/css/all.css');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700i,800i');
 
 $break-xs: 560px;
 $break-sm: 768px;
 $break-md: 992px;
 $break-lg: 1200px;
+
+$color-off-black: #231F20;
+$color-dark-grey: #404040;
+$color-50-grey: #939598;
+$color-10-grey: #E6E7E8;
+$color-web-off-black: #2A2A2A;
+$color-true-white: #FFFFFF;
+
 
 body {
     margin: 0;

@@ -1,4 +1,4 @@
-.jumbo {
+.intro {
     text-align: center;
     height: 100vh;
 
@@ -88,4 +88,30 @@
     }
 
 
+}
+
+.jumbo {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid grey;
+    &__subtext {
+        font-style: italic;
+        font-weight: 800;
+        padding: 0px 125px;
+    }
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #434244;
+    &__item {
+        color: $color-10-grey;
+        margin: 30px 0;
+        &:hover {
+            cursor: pointer;
+            color: white;
+        }
+    }
 }
