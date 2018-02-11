@@ -77,6 +77,7 @@
         height: 100px;
         bottom: 0;
         position: absolute;
+        cursor: pointer;
         transition: all 0.5s ease;
     }
 
@@ -99,6 +100,71 @@
         font-style: italic;
         font-weight: 800;
         padding: 0px 125px;
+    }
+}
+
+.featurette {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 3px solid grey;
+    padding-bottom: 20px;
+
+    @media screen and (max-width: 568px) {
+        grid-template-columns: 1fr;
+    }
+
+    &__item {
+        font-size: 2em;
+        font-style: italic;
+        padding: 40px;
+        color: #404040;
+        text-align: center;
+        img {
+            max-width: 100%;
+        }
+    }
+    &__text {
+        letter-spacing: 2px;
+        margin-top: 20px;
+    }
+}
+
+.banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    &__img {
+        img {
+            max-width: 100%;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        li {
+            color: $color-dark-grey;
+            font-size: 1.75em;
+            font-style: italic;
+            letter-spacing: 2px;
+            margin-left: 50px;
+            margin-bottom: 20px;
+        }
+    }
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        div {
+            padding: 40px 70px;
+            color: $color-10-grey;
+            background-color: $color-off-black;
+            &:hover {
+                transition: all 0.3s ease;
+                color: white;
+                cursor: pointer;
+                background-color: lighten($color-off-black, 5%);
+            }
+        }
     }
 }
 
