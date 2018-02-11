@@ -109,7 +109,7 @@
     border-bottom: 3px solid grey;
     padding-bottom: 20px;
 
-    @media screen and (max-width: 568px) {
+    @media screen and (max-width: $break-sm) {
         grid-template-columns: 1fr;
     }
 
@@ -132,6 +132,8 @@
 .banner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px 20px;
+
     &__img {
         img {
             max-width: 100%;
@@ -164,6 +166,26 @@
                 cursor: pointer;
                 background-color: lighten($color-off-black, 5%);
             }
+        }
+    }
+
+    @media screen and (max-width: $break-md) {
+        grid-template-columns: 1fr;
+        &__img {
+            text-align: center;
+            img {
+                height: 400px;
+            }
+        }
+        &__list {
+            padding: 0;
+            li {
+                margin: 20px auto;
+                list-style: none;
+            }
+        }
+        &__button {
+            margin: 40px 0;
         }
     }
 }
