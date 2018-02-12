@@ -9,13 +9,21 @@
 
     &__inner {
         position: relative;
+        @media screen and (max-width: $break-md) {
+            max-width: 500px;
+        }
     }
 
     &__image {
         opacity: 0;
         animation: fadeIn;
+        max-width: 100%;
         animation-fill-mode: forwards;
         animation-duration: 3s;
+        @media screen and (max-width: $break-md) {
+            transform: rotate(70deg);
+            max-width: 500px;
+        }
     }
 
     &__quote {
@@ -27,27 +35,33 @@
         text-align: left;
         z-index: 100;
 
+        @media screen and (max-width: $break-sm) {
+            font-size: 0.8em;
+        }
+
+        $quote-duration: 5s;
+
         // Instances of Quotes
         &--1 { 
             animation: fadeInLeft;
-            animation-fill-mode: forwards;
-            animation-duration: 2s;
+            // animation-fill-mode: forwards;
+            animation-duration: $quote-duration;
             top: 0;
             left: 0;
             animation-delay: 1s;
         }
         &--2 { 
             animation: fadeInRight;
-            animation-fill-mode: forwards;
-            animation-duration: 2s;
+            // animation-fill-mode: forwards;
+            animation-duration: $quote-duration;
             top: 0;
             right: 0;
             animation-delay: 2s; 
         }
         &--3 { 
             animation: fadeInLeft;
-            animation-fill-mode: forwards;
-            animation-duration: 2s;
+            // animation-fill-mode: forwards;
+            animation-duration: $quote-duration;
             bottom: 0;
             left: 0;
             animation-delay: 3s;
@@ -100,6 +114,18 @@
         font-style: italic;
         font-weight: 800;
         padding: 0px 125px;
+    }
+    @media screen and (max-width: $break-md) {
+        padding: 100px 0;
+
+        &__image {
+            transform: rotate(70deg);
+            max-width: 500px;
+        }
+
+        &__subtext {
+            margin-top: 100px;
+        }
     }
 }
 
