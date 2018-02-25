@@ -1,9 +1,9 @@
-.container {
+.foco-container {
     // from Bootstrap
-    padding-right: 15px;
-    padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
 
     @media screen and (min-width: $break-sm) {
         width: 750px;

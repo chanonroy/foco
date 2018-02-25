@@ -1,0 +1,1 @@
+"use strict";function setArrowBar(){setTimeout(function(){document.getElementById("arrow-bar").style.opacity=1},7e3)}setArrowBar();

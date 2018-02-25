@@ -5,36 +5,37 @@
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <!-- <link rel="icon" type="image/png" href="dist/assets/roy.png" /> -->
      <title> FOCO </title>
+     <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
      <link rel="stylesheet" type="text/css" href="dist/css/main.css">
 
    </head>
    <body>
 
-        <div class="nav__wrapper">
-          <div class="nav container">
-              <div class="nav__logo">
+        <div class="foco-nav__wrapper">
+          <div class="foco-nav foco-container">
+              <div class="foco-nav__logo">
                 <img src="dist/assets/FOCOGRINDERSLOGO.svg"/>
               </div>
-              <div class="nav__link-container">
-                <div class="nav__links">
-                  <div class="nav__link"> 
+              <div class="foco-nav__link-container">
+                <div class="foco-nav__links">
+                  <div class="foco-nav__link"> 
                     PAL 
-                    <div class="nav__ball active"> </div>
+                    <div class="foco-nav__ball active"> </div>
                   </div>
-                  <div class="nav__link">
+                  <div class="foco-nav__link">
                     SHOP
-                    <div class="nav__ball"> </div>
+                    <div class="foco-nav__ball"> </div>
                   </div>
-                  <div class="nav__link">
+                  <div class="foco-nav__link">
                     SUPPORT
-                    <div class="nav__ball"> </div>
+                    <div class="foco-nav__ball"> </div>
                   </div>
                 </div>
               </div>
           </div>
         </div>
 
-        <div class="container">
+        <div class="foco-container">
 
           <div class="intro">
             <div class="intro__inner">
@@ -64,27 +65,18 @@
             </div>
           </div>
 
-          <!-- <div class="jumbo">
-
-            <div>
-              <img class="jumbo__image" src="dist/assets/art/foco-1.png"/>
-              <h1 class="jumbo__subtext"> PAL </h1>
-            </div>
-
-          </div> -->
-
-          <div class="featurette">
-            <div class="featurette__item">
+          <div class="foco-featurette">
+            <div class="foco-featurette__item">
               <img src="dist/assets/art/FOCO_M_03.png" />
-              <div class="featurette__text"> Grind It. </div>
+              <div class="foco-featurette__text"> Grind It. </div>
             </div>
-            <div class="featurette__item">
+            <div class="foco-featurette__item">
               <img src="dist/assets/art/FOCO_M_04.png" />
-              <div class="featurette__text"> Store It. </div>
+              <div class="foco-featurette__text"> Store It. </div>
             </div>
-            <div class="featurette__item">
+            <div class="foco-featurette__item">
               <img src="dist/assets/art/FOCO_M_05.png" />
-              <div class="featurette__text"> Pour It. </div>
+              <div class="foco-featurette__text"> Pour It. </div>
             </div>
           </div>
 
@@ -117,17 +109,6 @@
         </div>
 
    </body>
-   <script>
-
-    function setArrowBar() {
-      setTimeout(
-        function() {
-          var x = document.getElementById('arrow-bar');
-          x.style.opacity = 1;
-        }, 7000);
-    }
-
-    setArrowBar();
-
-   </script>
+   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+   <script src="dist/js/index.js"></script>
 </html>

@@ -1,4 +1,4 @@
-.nav {
+.foco-nav {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
@@ -45,11 +45,16 @@
             display: block;
         }
     }
+
+    @media screen and (max-width: $break-md) {
+        display: none;
+    }
 }
 
 .intro {
     text-align: center;
     height: 100vh;
+    padding: 20px;
 
     display: flex;
     flex-direction: column;
@@ -69,7 +74,7 @@
     &__image {
         opacity: 0;
         animation: fadeIn;
-        max-width: 100%;
+        max-width: 800px;
         animation-fill-mode: forwards;
         animation-duration: 3s;
         @media screen and (max-width: $break-md) {
@@ -78,6 +83,7 @@
         }
         @media screen and (max-width: $break-sm) {
             max-width: 400px;
+            margin-left: -20px;
         }
     }
 
@@ -104,6 +110,9 @@
             top: 0;
             left: 0;
             animation-delay: 1s;
+            @media screen and (max-width: $break-sm) {
+                top: -120;
+            }
 
         }
         &--2 { 
@@ -173,31 +182,7 @@
 
 }
 
-.jumbo {
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    border-bottom: 3px solid grey;
-    &__subtext {
-        font-style: italic;
-        font-weight: 800;
-        padding: 0px 125px;
-    }
-    @media screen and (max-width: $break-md) {
-        padding: 100px 0;
-
-        &__image {
-            transform: rotate(70deg);
-            max-width: 500px;
-        }
-
-        &__subtext {
-            margin-top: 100px;
-        }
-    }
-}
-
-.featurette {
+.foco-featurette {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     border-bottom: 3px solid grey;
@@ -268,7 +253,7 @@
         &__img {
             text-align: center;
             img {
-                height: 400px;
+                max-height: 400px;
             }
         }
         &__list {
@@ -286,7 +271,7 @@
 
 .footer {
     margin-top: 20px;
-    padding: 10px;
+    padding: 15px;
     background-color: #434244;
     &__item {
         color: $color-10-grey;
