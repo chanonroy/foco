@@ -1,0 +1,17 @@
+.navbar-brand {
+    img {
+        height: 100%;
+    }
+}
+
+.navbar-default {
+    background-color: white;
+    border-color: $color-dark-grey;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    &:focus, &:hover {
+        background-color: transparent;
+    }
+}

@@ -1,7 +1,18 @@
+.navbar {
+    // Bootstrap navbar
+    @media screen and (min-width: $break-sm) {
+        display: none;
+    }
+}
+
 .foco-nav {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
+
+    @media screen and (max-width: $break-sm) {
+        display: none;
+    }
 
     border-bottom: 1px solid $color-dark-grey;
 
@@ -44,10 +55,6 @@
         &.active {
             display: block;
         }
-    }
-
-    @media screen and (max-width: $break-md) {
-        display: none;
     }
 }
 
