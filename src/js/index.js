@@ -8,3 +8,15 @@ function setArrowBar() {
   }
 
 setArrowBar();
+
+$("#arrow-bar").hover(function() {
+  var x = document.getElementById('arrow-bar');
+  x.style.opacity = 1;
+});
+
+// Arrow Bar Action
+$("#arrow-bar").click(function() {
+  $('html,body').animate({
+      scrollTop: $("#feature").offset().top},
+      'slow');
+});

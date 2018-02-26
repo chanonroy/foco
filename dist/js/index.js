@@ -1,1 +1,1 @@
-"use strict";function setArrowBar(){setTimeout(function(){document.getElementById("arrow-bar").style.opacity=1},7e3)}setArrowBar();
+"use strict";function setArrowBar(){setTimeout(function(){document.getElementById("arrow-bar").style.opacity=1},7e3)}setArrowBar(),$("#arrow-bar").hover(function(){document.getElementById("arrow-bar").style.opacity=1}),$("#arrow-bar").click(function(){$("html,body").animate({scrollTop:$("#feature").offset().top},"slow")});
