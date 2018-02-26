@@ -7,7 +7,9 @@ function setArrowBar() {
       }, 7000);
   }
 
-setArrowBar();
+  if (document.getElementById('arrow-bar')) {
+    setArrowBar();
+  }
 
 $("#arrow-bar").hover(function() {
   var x = document.getElementById('arrow-bar');
@@ -20,3 +22,21 @@ $("#arrow-bar").click(function() {
       scrollTop: $("#feature").offset().top},
       'slow');
 });
+
+
+// NAVIGATION BAR
+$(document).ready(function () {
+  $(".navbar-toggle").on("click", function() {
+      $(this).toggleClass("active");
+  });
+});
+
+// SUPPORT TOGGLES
+
+// if (document.getElementById('support')) {
+//   $("foco-accordion__toggle").on("click", function() {
+//       console.log(this);
+//       var $image = $(this).find('foco-accordion__icon');
+//       console.log($image);
+//   })
+// }

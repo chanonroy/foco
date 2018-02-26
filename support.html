@@ -13,24 +13,21 @@
 
         <!-- Mobile Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container-fluid">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#"> <img src="dist/assets/FOCOLOGO.svg"/> </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"> <img src="dist/assets/FOCOLOGO.svg"/> </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">PAL</a></li>
                 <li><a href="#">SHOP</a></li>
                 <li><a href="support.html">SUPPORT</a></li>
-              </ul>
+                </ul>
             </div>
-          </div>
         </nav>
 
         <div class="foco-nav__wrapper">
@@ -77,17 +74,71 @@
             </div>
             <hr class="foco-bar">
 
-            <div class="foco-text foco-container-inner">
-                <p>
-                    Bacon ipsum dolor amet doner ribeye meatball, bacon ball tip shoulder jerky venison chicken ham cow kevin hamburger 
-                    tenderloin prosciutto. Capicola bresaola alcatra, biltong ham hock short loin turducken swine. 
-                </p>
-                <p>
-                    Chicken ribeye pancetta shoulder rump. Ribeye chicken shoulder salami buffalo pastrami tenderloin pig flank porchetta pork loin hamburger. Capicola frankfurter cow chicken drumstick landjaeger jerky. 
-                </p>
-                <p>
-                    Biltong pork belly pig, ham tri-tip t-bone venison jowl pastrami short ribs corned beef ribeye.
-                </p>
+            <div id="support" class="foco-text foco-container-inner">
+                <div class="foco-accordion">
+                    <a class="foco-accordion__toggle" data-toggle="collapse" href="#support-1">
+                        <div class="foco-accordion__title">
+                            <h2 class="foco-bold"> <img class="foco-accordion__icon" toggle="false" src="dist/assets/SUPPORTCLOSED.svg"/> HOW TO </h2>
+                        </div>
+                    </a>
+                    <div id="support-1" class="panel-collapse collapse foco-accordion__body">
+                        <div class="foco-accordion__card">
+                            <h3> BUD TO BOWL </h3>
+                        </div>
+                        <div class="foco-accordion__card">
+                            <h3>DISK CHANGING &amp; DIFFERENT GRINDS</h3>
+                        </div>
+                        <div class="foco-accordion__card">
+                            <h3>CLEANING</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="foco-accordion">
+                    <a class="foco-accordion__toggle" data-toggle="collapse" href="#support-2">
+                        <div class="foco-accordion__title">
+                            <h2 class="foco-bold"> <img class="foco-accordion__icon" toggle="false" src="dist/assets/SUPPORTCLOSED.svg"/> PERFORMANCE </h2>
+                        </div>
+                    </a>
+                    <div id="support-2" class="panel-collapse collapse foco-accordion__body">
+                        <div class="foco-accordion__card">
+                            <h3> SPEED TEST </h3>
+                        </div>
+                        <div class="foco-accordion__card">
+                            <h3> STORAGE </h3>
+                        </div>
+                    </div>
+                </div> 
+                <div class="foco-accordion">
+                    <a class="foco-accordion__toggle" data-toggle="collapse" href="#support-3">
+                        <div class="foco-accordion__title">
+                            <h2 class="foco-bold"> <img class="foco-accordion__icon" toggle="false" src="dist/assets/SUPPORTCLOSED.svg"/> ORDERS </h2>
+                        </div>
+                    </a>
+                    <div id="support-3" class="panel-collapse collapse foco-accordion__body">
+                        <div class="foco-accordion__card">
+                            <h3> HOW IS IT PACKAGED? </h3>
+                        </div>
+                        <div class="foco-accordion__card">
+                            <h3> WHERE DO WE SHIP? </h3>
+                        </div>
+                        <div class="foco-accordion__card">
+                            <h3> WHEN DO WE SHIP? </h3>
+                        </div>
+                        <div class="foco-accordion__card">
+                            <h3> LARGE OR CUSTOM ORDERS? </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="foco-accordion">
+                    <a data-toggle="collapse" href="#support-4">
+                        <div class="foco-accordion__title">
+                            <h2 class="foco-bold"> <img class="foco-accordion__icon" toggle="false" src="dist/assets/SUPPORTCLOSED.svg"/> CONTACT US </h2>
+                        </div>
+                    </a>
+                    <div id="support-4" class="panel-collapse collapse foco-accordion__body">
+                        Have further questions or inquiries? Email us - support@focogrinders.com
+                    </div>
+                </div>
             </div>
 
         </div> <!-- container -->
