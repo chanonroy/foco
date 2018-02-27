@@ -32,21 +32,17 @@ $(document).ready(function () {
 });
 
 // SUPPORT TOGGLES
-// if (document.getElementById('support')) {
-//   $(".foco-accordion__toggle").on("click", function() {
+if (document.getElementById('support')) {
+  $(".foco-accordion__toggle").on("click", function() {
 
-//       var $image = $(this).find('.foco-accordion__icon');
-//       var open = $image.attr("open");
+      var expanded = $(this).attr("aria-expanded");
+      var $image = $(this).find('.foco-accordion__icon');
 
-//       console.log(open);
-      
-//       if (open == true) {
-//         $image[0].src = 'dist/assets/SUPPORTOPEN.svg';
-//         $image[0].setAttribute('open', 'true')
-//       } else {
-//         $image[0].src = 'dist/assets/SUPPORTCLOSED.svg';
-//         $image[0].setAttribute('open', 'false')
-//       }
+      if (expanded == 'true') {
+        $image[0].src = 'dist/assets/SUPPORTCLOSED.svg';
+      } else {
+        $image[0].src = 'dist/assets/SUPPORTOPEN.svg';
+      }
 
-//   })
-// }
+  })
+}
