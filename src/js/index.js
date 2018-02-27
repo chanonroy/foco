@@ -32,11 +32,21 @@ $(document).ready(function () {
 });
 
 // SUPPORT TOGGLES
-
 // if (document.getElementById('support')) {
-//   $("foco-accordion__toggle").on("click", function() {
-//       console.log(this);
-//       var $image = $(this).find('foco-accordion__icon');
-//       console.log($image);
+//   $(".foco-accordion__toggle").on("click", function() {
+
+//       var $image = $(this).find('.foco-accordion__icon');
+//       var open = $image.attr("open");
+
+//       console.log(open);
+      
+//       if (open == true) {
+//         $image[0].src = 'dist/assets/SUPPORTOPEN.svg';
+//         $image[0].setAttribute('open', 'true')
+//       } else {
+//         $image[0].src = 'dist/assets/SUPPORTCLOSED.svg';
+//         $image[0].setAttribute('open', 'false')
+//       }
+
 //   })
 // }
