@@ -342,10 +342,11 @@
         padding: 20px;
         border-radius: 2px;
         text-align: center;
-        h3 {
+        h2 {
             font-weight: 800;
             font-style: italic;
             margin: 0;
+            margin-bottom: 20px;
         }
         &:not(:last-child) {
             margin-bottom: 20px;
