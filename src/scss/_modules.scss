@@ -84,6 +84,15 @@
         }
     }
 
+    &__subtitle {
+        margin-top: 50px;
+        font-weight: 800;
+        font-style: italic;
+        @media screen and (max-width: $break-md) {
+            margin-top: 150px;
+        }
+    }
+
     &__image {
         opacity: 0;
         animation: fadeIn;
@@ -183,6 +192,9 @@
         @media screen and (max-width: $break-sm) {
             width: 125px;
         }
+        &--ready {
+            animation: hovering 2s infinite;
+        }
     }
 
     &__logo {
@@ -230,7 +242,6 @@
 .foco-featurette {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    border-bottom: 2px solid $color-50-grey;
     padding-bottom: 20px;
 
     @media screen and (max-width: $break-sm) {
@@ -370,4 +381,8 @@
     h3 {
         margin-top: 40px;
     }
+}
+
+.foco-separator {
+    border-bottom: 2px solid $color-50-grey;
 }

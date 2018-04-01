@@ -2,6 +2,8 @@
 function setArrowBar() {
     setTimeout(
       function() {
+        var y = document.getElementById('arrow-bar-empty');
+        y.style.opacity = 0;
         var x = document.getElementById('arrow-bar');
         x.style.opacity = 1;
       }, 7000);
@@ -12,6 +14,8 @@ function setArrowBar() {
   }
 
 $("#arrow-bar").hover(function() {
+  var y = document.getElementById('arrow-bar-empty');
+  y.style.opacity = 0;
   var x = document.getElementById('arrow-bar');
   x.style.opacity = 1;
 });
@@ -19,7 +23,7 @@ $("#arrow-bar").hover(function() {
 // Arrow Bar Action
 $("#arrow-bar").click(function() {
   $('html,body').animate({
-      scrollTop: $("#feature").offset().top},
+      scrollTop: $("#content-start").offset().top},
       'slow');
 });
 
