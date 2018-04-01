@@ -9,6 +9,13 @@
     border-color: $color-dark-grey;
 }
 
+.navbar-nav {
+    li {
+        text-align: center;
+        padding: 5px 0;
+    }
+}
+
 .navbar-default .navbar-toggle {
     border-color: transparent;
     &:focus, &:hover {

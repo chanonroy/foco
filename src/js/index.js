@@ -6,7 +6,7 @@ function setArrowBar() {
         y.style.opacity = 0;
         var x = document.getElementById('arrow-bar');
         x.style.opacity = 1;
-      }, 7000);
+      }, 8000);
   }
 
   if (document.getElementById('arrow-bar')) {
@@ -23,7 +23,7 @@ $("#arrow-bar").hover(function() {
 // Arrow Bar Action
 $("#arrow-bar").click(function() {
   $('html,body').animate({
-      scrollTop: $("#content-start").offset().top},
+      scrollTop: $("#foco-nav").offset().top},
       'slow');
 });
 

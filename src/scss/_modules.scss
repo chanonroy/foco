@@ -11,7 +11,7 @@
     padding: 10px 0;
 
     @media screen and (max-width: $break-sm) {
-        display: none;
+        visibility: hidden;
     }
 
     border-bottom: 2px solid $color-50-grey;
@@ -98,6 +98,7 @@
         animation: fadeIn;
         max-width: 800px;
         animation-fill-mode: forwards;
+        animation-delay: 1s;
         animation-duration: 3s;
         @media screen and (max-width: $break-md) {
             transform: rotate(70deg);
@@ -131,7 +132,7 @@
             animation-duration: $quote-duration;
             top: 0;
             left: 0;
-            animation-delay: 1s;
+            animation-delay: 2s;
             @media screen and (max-width: $break-sm) {
                 top: -120;
             }
@@ -143,7 +144,7 @@
             animation-duration: $quote-duration;
             top: 0;
             right: 0;
-            animation-delay: 2s;
+            animation-delay: 3s;
             @media screen and (max-width: $break-md) {
                 top: -100;
             }
@@ -157,7 +158,7 @@
             animation-duration: $quote-duration;
             bottom: 0;
             left: 0;
-            animation-delay: 3s;
+            animation-delay: 4s;
             @media screen and (max-width: $break-md) {
                 bottom: -70;
             }
