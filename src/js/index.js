@@ -39,9 +39,9 @@ if (document.getElementById('support')) {
       var $image = $(this).find('.foco-accordion__icon');
 
       if (expanded == 'true') {
-        $image[0].src = 'dist/assets/SUPPORTCLOSED.svg';
+        $image[0].src = 'assets/SUPPORTCLOSED.svg';
       } else {
-        $image[0].src = 'dist/assets/SUPPORTOPEN.svg';
+        $image[0].src = 'assets/SUPPORTOPEN.svg';
       }
 
   })

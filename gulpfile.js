@@ -17,6 +17,11 @@ gulp.task('clean', function() {
   return del.sync([outputDir]);
 });
 
+gulp.task('html', function () {
+  return gulp.src(inputDir + './*.html')
+             .pipe(gulp.dest(outputDir));
+});
+
 // 'gulp styles' - compiles scss, autoprefixes
 gulp.task('styles', function() {
   return gulp.src(inputDir + 'scss/*.scss')
@@ -45,6 +50,10 @@ gulp.task('assets', function() {
 // automatic detection of changes triggers relevant gulp task
 gulp.task('watch', function() {
 
+  watch(inputDir + './*.html', function() {
+    gulp.run('html');
+  })
+
   watch(inputDir + 'js/**/*.js', function() {
     gulp.run('scripts');
   });
@@ -62,4 +71,4 @@ gulp.task('watch', function() {
 gulp.task('build', ['styles', 'scripts', 'assets']);
 
 // default task (called when you run 'gulp' from CLI)
-gulp.task('default', ['clean', 'watch', 'styles', 'scripts', 'assets']);
+gulp.task('default', ['clean', 'watch', 'html', 'styles', 'scripts', 'assets']);
