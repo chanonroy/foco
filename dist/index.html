@@ -130,6 +130,11 @@
 
         <div class="footer">
           <div class="container">
+            
+            <div>
+              testing
+            </div>
+
             <div class="footer__item">
                 <a href="https://www.instagram.com/foco_mill/" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
             </div>
@@ -146,6 +151,7 @@
 
    </body>
    <script>
+     
     //  var passIsValid = false;
     //  while (!passIsValid) {
     //    var password = prompt("Enter password:");
@@ -157,5 +163,15 @@
    </script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
+   <script>
+      var defaultScroll = $(window).scrollTop();
+
+      // User has defined position
+      if (defaultScroll > 0) {
+        $('#foco-intro').css('display', 'none');
+        $('body').css('overflow', 'visible');
+      }
+
+   </script>
    <script src="js/index.js"></script>
 </html>
