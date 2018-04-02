@@ -22,9 +22,20 @@ $("#arrow-bar").hover(function() {
 
 // Arrow Bar Action
 $("#arrow-bar").click(function() {
+  // Scroll down
   $('html,body').animate({
       scrollTop: $("#foco-nav").offset().top},
-      'slow');
+      1000);
+
+  // Remove overflow
+  $('body').css('overflow', 'visible');
+
+  // Remove cover
+  setTimeout(
+    function() {
+      $('#foco-intro').css('display', 'none');
+    }, 1200);
+    
 });
 
 
