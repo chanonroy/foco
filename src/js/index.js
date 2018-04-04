@@ -24,7 +24,7 @@ $("#arrow-bar").hover(function() {
 $("#arrow-bar").click(function() {
   // Scroll down
   $('html,body').animate({
-      scrollTop: $("#foco-nav").offset().top},
+      scrollTop: $("#main").offset().top},
       1000);
 
   // Remove overflow
