@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700i,800i');
 
 $break-xs: 560px;
-$break-sm: 768px;
+$break-sm: 769px;
 $break-md: 992px;
 $break-lg: 1200px;
 
@@ -26,3 +26,15 @@ body {
       }
     }
   }
+
+.show-md {
+  @media screen and (max-width: $break-md) {
+    display: none;
+  }
+}
+
+.hide-md {
+  @media screen and (min-width: $break-md) {
+    display: none;
+  }
+}

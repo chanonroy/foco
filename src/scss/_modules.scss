@@ -11,7 +11,7 @@
     padding: 10px 0;
 
     @media screen and (max-width: $break-sm) {
-        visibility: hidden;
+        display: none;
     }
 
     border-bottom: 2px solid $color-50-grey;
@@ -86,26 +86,26 @@
 
     &__subtitle {
         margin-top: 50px;
+        padding: 0 10px;
         font-weight: 800;
         font-style: italic;
-        @media screen and (max-width: $break-md) {
-            margin-top: 150px;
-        }
     }
 
     &__image {
         opacity: 0;
         animation: fadeIn;
         max-width: 800px;
+        max-height: 800px;
         animation-fill-mode: forwards;
         animation-delay: 1s;
         animation-duration: 3s;
         @media screen and (max-width: $break-md) {
-            transform: rotate(70deg);
             max-width: 500px;
+            max-height: 500px;
         }
         @media screen and (max-width: $break-sm) {
             max-width: 400px;
+            max-height: 400px;
             margin-left: -20px;
         }
     }
@@ -203,6 +203,11 @@
         right: 25px;
         bottom: 25px;
         height: 35px;
+        @media screen and (max-width: $break-sm) {
+            right: 10;
+            bottom: 10;
+            height: 20px;
+        }
     }
 
 
@@ -390,9 +395,18 @@
     }
 
     @media screen and (max-width: $break-sm) {
-        width: 350px;
+        width: 100%;
+
         &__input {
-            width: 350px;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        &__button {
+            position: static;
+            font-size: 1em;
+            width: 100%;
         }
     }
 }
@@ -408,6 +422,9 @@
         &:hover {
             cursor: pointer;
             color: white;
+        }
+        &.no-hover {
+            cursor: default;
         }
     }
 }
