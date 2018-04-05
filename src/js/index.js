@@ -6,7 +6,7 @@ function setArrowBar() {
         y.style.opacity = 0;
         var x = document.getElementById('arrow-bar');
         x.style.opacity = 1;
-      }, 8000);
+      }, 4000);
   }
 
   if (document.getElementById('arrow-bar')) {
