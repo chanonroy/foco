@@ -20,6 +20,17 @@ $("#arrow-bar").hover(function() {
   x.style.opacity = 1;
 });
 
+window.addEventListener('scroll', function(e) {
+  var isBelowTop = $(window).scrollTop() > 0;
+  if (isBelowTop) {
+    $('body').removeClass("foco-scroll-lock");
+    setTimeout(
+      function() {
+        $('#foco-intro').css('display', 'none');
+      }, 1200);
+  }
+});
+
 // Arrow Bar Action
 function scrollDownArrowBar() {
   $('html,body').animate({
@@ -27,7 +38,7 @@ function scrollDownArrowBar() {
     1000);
 
   // Remove overflow
-  $('body').css('overflow', 'visible');
+  $('body').removeClass("foco-scroll-lock");
 
   // Remove cover
   setTimeout(

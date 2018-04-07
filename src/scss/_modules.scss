@@ -74,6 +74,10 @@
     justify-content: center;
     align-items: center;
 
+    @media screen and (max-width: $break-sm) {
+        display: none;
+    }
+
     &__inner {
         position: relative;
         @media screen and (max-width: $break-md) {
