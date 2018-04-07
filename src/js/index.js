@@ -21,11 +21,10 @@ $("#arrow-bar").hover(function() {
 });
 
 // Arrow Bar Action
-$("#arrow-bar").click(function() {
-  // Scroll down
+function scrollDownArrowBar() {
   $('html,body').animate({
-      scrollTop: $("#main").offset().top},
-      1000);
+    scrollTop: $("#main").offset().top},
+    1000);
 
   // Remove overflow
   $('body').css('overflow', 'visible');
@@ -35,9 +34,7 @@ $("#arrow-bar").click(function() {
     function() {
       $('#foco-intro').css('display', 'none');
     }, 1200);
-    
-});
-
+}
 
 // NAVIGATION BAR
 $(document).ready(function () {
