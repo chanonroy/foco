@@ -8,7 +8,7 @@
 .foco-nav {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 10px;
 
     @media screen and (max-width: $break-sm) {
         display: none;
@@ -74,7 +74,7 @@
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: $break-sm) {
+    @media screen and (max-width: $break-ipad) {
         display: none;
     }
 

@@ -7,7 +7,7 @@
 
 .foco-scroll-lock {
     overflow: hidden;
-    @media screen and (max-width: $break-sm) {
+    @media screen and (max-width: $break-ipad) {
         overflow: visible !important;
     }
 }

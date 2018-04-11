@@ -44,7 +44,7 @@ function scrollDownArrowBar() {
   setTimeout(
     function() {
       $('#foco-intro').css('display', 'none');
-    }, 1200);
+    }, 1300);
 }
 
 // NAVIGATION BAR
