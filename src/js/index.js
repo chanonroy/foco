@@ -24,27 +24,14 @@ window.addEventListener('scroll', function(e) {
   var isBelowTop = $(window).scrollTop() > 0;
   if (isBelowTop) {
     $('body').removeClass("foco-scroll-lock");
-    setTimeout(
-      function() {
-        $('#foco-intro').css('display', 'none');
-      }, 1200);
+    $('#foco-intro').animate({top: "-125vh"}, 0);
   }
 });
 
 // Arrow Bar Action
 function scrollDownArrowBar() {
-  $('html,body').animate({
-    scrollTop: $("#main").offset().top},
-    1000);
-
-  // Remove overflow
+  $('#foco-intro').animate({top: "-125vh"}, 1500);
   $('body').removeClass("foco-scroll-lock");
-
-  // Remove cover
-  setTimeout(
-    function() {
-      $('#foco-intro').css('display', 'none');
-    }, 1300);
 }
 
 // NAVIGATION BAR
