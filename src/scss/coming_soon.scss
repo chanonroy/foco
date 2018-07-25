@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700i,800i');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.logo {
+    background-color: brown;
+    color: gold;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.photo-container {
+    width: 100%;
+    height: 65%;
+    background-image: url('../assets/coming_soon/krorg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.info-panel {
+    text-align: center;
+    bottom: 0;
+    padding: 20px 0;
+    background-color: burlywood;
+    z-index: 999;
+    height: 35%;
+    width: 100%;
+}
