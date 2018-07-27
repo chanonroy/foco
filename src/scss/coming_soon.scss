@@ -5,13 +5,17 @@ body {
     margin: 0;
 }
 
+$dark-brown: rgb(216,159,102);
+$gold: rgb(246, 239, 40);
+
 .logo {
-    background-color: brown;
-    color: gold;
-    padding: 20px;
+    background-color: $dark-brown;
+    color: $gold;
+    padding: 20px 30px;
     margin: 20px;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 2em;
     font-style: italic;
 }
 
@@ -34,9 +38,18 @@ body {
 .info-panel {
     text-align: center;
     bottom: 0;
-    padding: 20px 0;
-    background-color: burlywood;
+    background-color: $dark-brown;
+    font-size: 1.2em;
     z-index: 999;
     height: 35%;
     width: 100%;
+
+    div {
+        color: white;
+    }
+
+    img {
+        margin-top: 20px;
+        width: 75px;
+    }
 }
