@@ -53,3 +53,10 @@ $gold: rgb(246, 239, 40);
         width: 75px;
     }
 }
+
+.logo {
+    transition: all 0.3s ease;
+    &:hover {
+        opacity: 0.7;
+    }
+}
